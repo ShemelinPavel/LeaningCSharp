@@ -12,10 +12,17 @@ namespace Lesson1ClassLibrary
 
         }
 
-        public static void Print(string Text)
+        public static void Print(string Text, bool EndOfString = true)
         {
 
-            Console.WriteLine(Text);
+            if (EndOfString)
+            {
+                Console.WriteLine(Text);
+            }
+            else
+            {
+                Console.Write(Text);
+            }
 
         }
 
@@ -25,6 +32,17 @@ namespace Lesson1ClassLibrary
             Console.WriteLine(Text, arg);
 
         }
+
+        public static string MakeQuestion(string questionText)
+        {
+
+            Print("Введите " + questionText + " : ", false);
+
+            return Console.ReadLine();
+
+        }
+
+
 
 
     }

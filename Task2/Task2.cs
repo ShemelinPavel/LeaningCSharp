@@ -1,6 +1,7 @@
 ﻿namespace Lesson1
 {
     using System;
+    using Lesson1ClassLibrary;
 
     class Task2
     {
@@ -11,18 +12,14 @@
             string WelcomeText = "Добрый день, пользователь\n";
             WelcomeText = WelcomeText + "Давайте расчитаем показатель ИМТ.\n";
  
-            Console.WriteLine(WelcomeText);
+            Lesson1ClassLibrary.Print(WelcomeText);
 
-            Console.Write("Ваш рост в метрах: ");
-            decimal Height = Decimal.Parse(Console.ReadLine());
+            decimal Height = Decimal.Parse(Lesson1ClassLibrary.MakeQuestion("ваш рост в метрах"));
+            decimal Weight = Decimal.Parse(Lesson1ClassLibrary.MakeQuestion("ваш вес в кг"));
 
-            Console.Write("Ваш вес в кг: ");
-            decimal Weight = Decimal.Parse(Console.ReadLine());
+            Lesson1ClassLibrary.Print("Ваш ИМТ: {0:N2}", Weight / (Height * Height));
 
-            //Console.WriteLine("")
-            Console.WriteLine("Ваш ИМТ: {0:N2}", Weight / (Height * Height));
-
-            Console.ReadKey();
+            Lesson1ClassLibrary.Pause();
 
         }
 

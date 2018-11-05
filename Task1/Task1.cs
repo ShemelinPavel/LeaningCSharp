@@ -6,15 +6,6 @@
     class Task1
     {
 
-        static string MakeQuestion(string questionText)
-        {
-
-            Console.Write("Введите " + questionText + ":");
-
-            return Console.ReadLine();
-
-        }
-
         static void PrintForm(string fName, string lName, string age, string height, string weight)
         {
 
@@ -38,11 +29,11 @@
 
             Lesson1ClassLibrary.Print(WelcomeText);
 
-            string FirstName = MakeQuestion("Ваше имя");
-            string LastName = MakeQuestion("Вашу фамилию");
-            string Age = MakeQuestion("Ваш возраст");
-            string Height = MakeQuestion("Ваш рост");
-            string Weight = MakeQuestion("Ваш вес");
+            string FirstName = Lesson1ClassLibrary.MakeQuestion("Ваше имя");
+            string LastName = Lesson1ClassLibrary.MakeQuestion("Вашу фамилию");
+            string Age = Lesson1ClassLibrary.MakeQuestion("Ваш возраст");
+            string Height = Lesson1ClassLibrary.MakeQuestion("Ваш рост");
+            string Weight = Lesson1ClassLibrary.MakeQuestion("Ваш вес");
 
             PrintForm(FirstName, LastName, Age, Height, Weight);
 

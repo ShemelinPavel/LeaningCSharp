@@ -40,5 +40,11 @@
   <ItemGroup>
     <Compile Include="Task2.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson1ClassLibrary\Lesson1ClassLibrary.csproj">
+      <Project>{bf23576b-a9fd-4c18-8b89-f0314cc93977}</Project>
+      <Name>Lesson1ClassLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
