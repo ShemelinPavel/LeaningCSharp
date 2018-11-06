@@ -1,4 +1,12 @@
-﻿namespace Lesson1
+﻿/*
+ 
+Shemelin Pavel
+
+2. Ввести вес и рост человека. Рассчитать и вывести индекс массы тела (ИМТ) по формуле I=m/(h*h); где m — масса тела в килограммах, h — рост в метрах
+
+*/
+
+namespace Lesson1
 {
     using System;
     using Lesson1ClassLibrary;

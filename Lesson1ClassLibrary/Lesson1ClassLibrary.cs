@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ 
+Shemelin Pavel
+
+6. *Создать класс с методами, которые могут пригодиться в вашей учебе (Print, Pause).
+
+*/
+
+using System;
 
 namespace Lesson1ClassLibrary
 {
